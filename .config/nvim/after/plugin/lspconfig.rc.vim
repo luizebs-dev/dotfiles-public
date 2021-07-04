@@ -6,6 +6,8 @@ lua << EOF
 --vim.lsp.set_log_level("debug")
 EOF
 
+
+
 lua << EOF
 local nvim_lsp = require('lspconfig')
 local protocol = require'vim.lsp.protocol'
@@ -90,6 +92,16 @@ nvim_lsp.tsserver.setup {
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" }
 }
 
+nvim_lsp.clangd.setup {
+  on_attach = on_attach,
+  filetypes = { "cpp", "c", "hpp", "h" },
+  cmd = {
+      'ccls',
+      '--init={"cache": {"directory": "/tmp/ccls-cache"}}'
+  },
+  capabilities = capabilities
+}
+
 nvim_lsp.diagnosticls.setup {
   on_attach = on_attach,
   filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown', 'pandoc' },
@@ -147,6 +159,7 @@ nvim_lsp.diagnosticls.setup {
     }
   }
 }
+
 
 -- icon
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(

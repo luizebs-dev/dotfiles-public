@@ -11,7 +11,7 @@ if !1 | finish | endif
 set nocompatible
 set number
 syntax enable
-set fileencodings=utf-8,sjis,euc-jp,latin
+set fileencodings=utf-8
 set encoding=utf-8
 set title
 set autoindent
@@ -24,8 +24,8 @@ set laststatus=2
 set scrolloff=10
 set expandtab
 "let loaded_matchparen = 1
-set shell=fish
-set backupskip=/tmp/*,/private/tmp/*
+set shell=zsh
+set backupskip=/tmp/*
 
 " incremental substitution (neovim)
 if has('nvim')
@@ -98,8 +98,12 @@ au BufNewFile,BufRead *.tsx setf typescriptreact
 au BufNewFile,BufRead *.md set filetype=markdown
 " Flow
 au BufNewFile,BufRead *.flow set filetype=javascript
+" cpp
+au BufNewFile,BufRead *.cpp set filetype=cpp
+au BufNewFile,BufRead *.hpp set filetype=cpp
 
-set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
+set suffixesadd=.cpp,.hpp,.c,.h,.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
+
 
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
@@ -146,3 +150,7 @@ set exrc
 "}}}
 
 " vim: set foldmethod=marker foldlevel=0:
+
+
+
+
