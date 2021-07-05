@@ -14,6 +14,9 @@ require'nvim-treesitter.configs'.setup {
     disable = {},
   },
   ensure_installed = {
+    "cpp",
+    "julia",
+    "python",
     "tsx",
     "toml",
     "fish",
