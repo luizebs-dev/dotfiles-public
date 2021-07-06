@@ -1,0 +1,383 @@
+
+
+
+n  <Space>f    *@<Cmd>lua vim.lsp.buf.formatting()<CR>
+n  <Space>q    *@<Cmd>lua vim.lsp.diagnostic.set_loclist()<CR>
+n  <Space>e    *@<Cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
+n  <Space>ca   *@<Cmd>lua vim.lsp.buf.code_action()<CR>
+n  <Space>rn   *@<Cmd>lua vim.lsp.buf.rename()<CR>
+n  <Space>D    *@<Cmd>lua vim.lsp.buf.type_definition()<CR>
+n  <Space>wl   *@<Cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>
+n  <Space>wr   *@<Cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>
+n  <Space>wa   *@<Cmd>lua vim.lsp.buf.add_workspace_folder()<CR>
+n  gr          *@<Cmd>lua vim.lsp.buf.references()<CR>
+n  gi          *@<Cmd>lua vim.lsp.buf.implementation()<CR>
+n  gd          *@<Cmd>lua vim.lsp.buf.definition()<CR>
+n  gD          *@<Cmd>lua vim.lsp.buf.declaration()<CR>
+n  <S-NL>      *@<Cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+   <M-n>       *@:call AutoPairsJump()<CR>
+	Last set from ~/.local/share/nvim/plugged/auto-pairs/plugin/auto-pairs.vim line 577
+   <M-p>       *@:call AutoPairsToggle()<CR>
+	Last set from ~/.local/share/nvim/plugged/auto-pairs/plugin/auto-pairs.vim line 572
+n  <Tab>         :tabnext<CR>
+	Last set from ~/.config/nvim/maps.vim line 35
+n  <NL>        * <Cmd>Lspsaga diagnostic_jump_next<CR>
+	Last set from ~/.config/nvim/after/plugin/lspsaga.rc.vim line 16
+n  <C-W><NL>     <C-W>-
+	Last set from ~/.config/nvim/maps.vim line 57
+n  <C-W><C-K>    <C-W>+
+	Last set from ~/.config/nvim/maps.vim line 56
+n  <C-W><C-L>    <C-W>>
+	Last set from ~/.config/nvim/maps.vim line 55
+n  <C-W><C-H>    <C-W><
+	Last set from ~/.config/nvim/maps.vim line 54
+n  <Space>dcbp   <Plug>VimspectorToggleConditionalBreakpoint
+	Last set from ~/.config/nvim/maps.vim line 180
+n  <Space>dbp    <Plug>VimspectorToggleBreakpoint
+	Last set from ~/.config/nvim/maps.vim line 179
+n  <Space>drc    <Plug>VimspectorRunToCursor
+	Last set from ~/.config/nvim/maps.vim line 178
+n  <Space>d<Space> * :call vimspector#Continue()<CR>
+	Last set from ~/.config/nvim/maps.vim line 176
+n  <Space>d_     <Plug>VimspectorRestart
+	Last set from ~/.config/nvim/maps.vim line 175
+n  <Space>dk     <Plug>VimspectorStepOut
+	Last set from ~/.config/nvim/maps.vim line 174
+n  <Space>dj     <Plug>VimspectorStepOver
+	Last set from ~/.config/nvim/maps.vim line 173
+n  <Space>dl     <Plug>VimspectorStepInto
+	Last set from ~/.config/nvim/maps.vim line 172
+n  <Space>dtcb * :call vimspector#CleanLineBreakpoint()<CR>
+	Last set from ~/.config/nvim/maps.vim line 170
+n  <Space>de   * :call vimspector#Reset()<CR>
+	Last set from ~/.config/nvim/maps.vim line 168
+n  <Space>do   * :call GotoWindow(g:vimspector_session_windows.output)<CR>
+	Last set from ~/.config/nvim/maps.vim line 167
+n  <Space>ds   * :call GotoWindow(g:vimspector_session_windows.stack_trace)<CR>
+	Last set from ~/.config/nvim/maps.vim line 166
+n  <Space>dw   * :call GotoWindow(g:vimspector_session_windows.watches)<CR>
+	Last set from ~/.config/nvim/maps.vim line 165
+n  <Space>dv   * :call GotoWindow(g:vimspector_session_windows.variables)<CR>
+	Last set from ~/.config/nvim/maps.vim line 164
+n  <Space>dt   * :call GotoWindow(g:vimspector_session_windows.tagpage)<CR>
+	Last set from ~/.config/nvim/maps.vim line 163
+n  <Space>dc   * :call GotoWindow(g:vimspector_session_windows.code)<CR>
+	Last set from ~/.config/nvim/maps.vim line 162
+n  <Space>dd   * :call vimspector#Launch()<CR>
+	Last set from ~/.config/nvim/maps.vim line 161
+n  <Space>m    * :MaximizerToggle!<CR>
+	Last set from ~/.config/nvim/maps.vim line 160
+x  <Space>cu     <Plug>NERDCommenterUncomment
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>cu     <Plug>NERDCommenterUncomment
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+x  <Space>cb     <Plug>NERDCommenterAlignBoth
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>cb     <Plug>NERDCommenterAlignBoth
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+x  <Space>cl     <Plug>NERDCommenterAlignLeft
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>cl     <Plug>NERDCommenterAlignLeft
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>cA     <Plug>NERDCommenterAppend
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+x  <Space>cy     <Plug>NERDCommenterYank
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>cy     <Plug>NERDCommenterYank
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+x  <Space>cs     <Plug>NERDCommenterSexy
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>cs     <Plug>NERDCommenterSexy
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+x  <Space>ci     <Plug>NERDCommenterInvert
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>ci     <Plug>NERDCommenterInvert
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>c$     <Plug>NERDCommenterToEOL
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+x  <Space>cn     <Plug>NERDCommenterNested
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>cn     <Plug>NERDCommenterNested
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+x  <Space>cm     <Plug>NERDCommenterMinimal
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>cm     <Plug>NERDCommenterMinimal
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+x  <Space>c<Space>   <Plug>NERDCommenterToggle
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>c<Space>   <Plug>NERDCommenterToggle
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+x  <Space>cc     <Plug>NERDCommenterComment
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>cc     <Plug>NERDCommenterComment
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3173
+n  <Space>x    * "_x
+	Last set from ~/.config/nvim/maps.vim line 2
+n  <Space>nf   * :NERDTreeFind<CR>
+	Last set from ~/.config/nvim/maps.vim line 228
+n  <Space>nt   * :NERDTreeToggle<CR>
+	Last set from ~/.config/nvim/maps.vim line 227
+n  <Space>nn   * :NERDTree<CR>
+	Last set from ~/.config/nvim/maps.vim line 226
+n  <Space>n    * :NERDTreeFocus<CR>
+	Last set from ~/.config/nvim/maps.vim line 225
+n  <Space>ww   * ofunction wait(ms: number): Promise<void> {<CR>return new Promise(res => setTimeout(res, ms));<CR>}<Esc>k=i{<CR>
+	Last set from ~/.config/nvim/maps.vim line 220
+n  <Space>th     <Plug>BujoAddnormal
+	Last set from ~/.config/nvim/maps.vim line 217
+n  <Space>tu     <Plug>BujoChecknormal
+	Last set from ~/.config/nvim/maps.vim line 216
+v  <Space>d    * "_d
+	Last set from ~/.config/nvim/maps.vim line 213
+n  <Space>d    * "_d
+	Last set from ~/.config/nvim/maps.vim line 212
+n  <Space>Y    * gg"+yG
+	Last set from ~/.config/nvim/maps.vim line 210
+v  <Space>y    * "+y
+	Last set from ~/.config/nvim/maps.vim line 209
+n  <Space>y    * "+y
+	Last set from ~/.config/nvim/maps.vim line 208
+v  <Space>p    * "_dP
+	Last set from ~/.config/nvim/maps.vim line 205
+n  <Space>s    * :%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>
+	Last set from ~/.config/nvim/maps.vim line 201
+n  <Space>cpu  * a%" PRIu64 "<Esc>
+	Last set from ~/.config/nvim/maps.vim line 198
+n  <Space>ee   * oif err != nil {<CR>log.Fatalf("%+v\n", err)<CR>}<CR><Esc>kkI<Esc>
+	Last set from ~/.config/nvim/maps.vim line 197
+n  <Space>rp   * :resize 100<CR>
+	Last set from ~/.config/nvim/maps.vim line 196
+n  <Space>-    * :vertical resize -5<CR>
+	Last set from ~/.config/nvim/maps.vim line 195
+n  <Space>+    * :vertical resize +5<CR>
+	Last set from ~/.config/nvim/maps.vim line 194
+n  <Space><CR> * :so ~/.config/nvim/init.vim<CR>
+	Last set from ~/.config/nvim/maps.vim line 193
+n  <Space>pv   * :Ex<CR>
+	Last set from ~/.config/nvim/maps.vim line 192
+n  <Space>u    * :UndotreeShow<CR>
+	Last set from ~/.config/nvim/maps.vim line 191
+n  <Space>bs   * /<C-R>=escape(expand("<cWORD>"), "/")<CR><CR>
+	Last set from ~/.config/nvim/maps.vim line 190
+n  <Space>ghw  * :h <C-R>=expand("<cword>")<CR><CR>
+	Last set from ~/.config/nvim/maps.vim line 189
+v  <Space>ca   * :<C-U>lua require('lspsaga.codeaction').range_code_action()<CR>
+	Last set from ~/.config/nvim/maps.vim line 146
+n  <Space>ca   * <Cmd>lua require('lspsaga.codeaction').code_action()<CR>
+	Last set from ~/.config/nvim/maps.vim line 145
+n  <Space>gs   * :Gstatus<CR>
+	Last set from ~/.config/nvim/maps.vim line 137
+n  <Space><Space> * :call ToggleQuickfix()<CR>
+	Last set from ~/.config/nvim/maps.vim line 123
+n  <Space>       <C-W>w
+	Last set from ~/.config/nvim/maps.vim line 44
+v  #           * :<C-U>let old_reg=getreg('"')|let old_regtype=getregtype('"')<CR>gvy?<C-R><C-R>=substitute(escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>gV:call setreg('"', old_reg, old_regtype)<CR>
+	Last set from ~/.config/nvim/maps.vim line 23
+o  %             <Plug>(MatchitOperationForward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 60
+x  %             <Plug>(MatchitVisualForward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 58
+n  %             <Plug>(MatchitNormalForward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 56
+v  *           * :<C-U>let old_reg=getreg('"')|let old_regtype=getregtype('"')<CR>gvy/<C-R><C-R>=substitute(escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>gV:call setreg('"', old_reg, old_regtype)<CR>
+	Last set from ~/.config/nvim/maps.vim line 18
+n  ;h          * <Cmd>Telescope help_tags<CR>
+	Last set from ~/.config/nvim/after/plugin/telescope.rc.vim line 6
+n  ;b          * <Cmd>Telescope buffers<CR>
+	Last set from ~/.config/nvim/after/plugin/telescope.rc.vim line 5
+n  ;g          * <Cmd>Telescope live_grep<CR>
+	Last set from ~/.config/nvim/after/plugin/telescope.rc.vim line 4
+n  ;f          * <Cmd>Telescope find_files<CR>
+	Last set from ~/.config/nvim/after/plugin/telescope.rc.vim line 3
+v  J           * :m '>+1<CR>gv=gv
+	Last set from ~/.config/nvim/maps.vim line 199
+n  K           * <Cmd>Lspsaga hover_doc<CR>
+	Last set from ~/.config/nvim/after/plugin/lspsaga.rc.vim line 17
+v  K           * :m '<-2<CR>gv=gv
+	Last set from ~/.config/nvim/maps.vim line 200
+n  Q           * <Nop>
+	Last set from ~/.config/nvim/maps.vim line 188
+o  [%            <Plug>(MatchitOperationMultiBackward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 75
+x  [%            <Plug>(MatchitVisualMultiBackward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 73
+n  [%            <Plug>(MatchitNormalMultiBackward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 71
+n  \-          * <C-X>
+	Last set from ~/.config/nvim/maps.vim line 6
+n  \+          * <C-A>
+	Last set from ~/.config/nvim/maps.vim line 5
+n  \x          * "_x
+	Last set from ~/.config/nvim/maps.vim line 2
+o  ]%            <Plug>(MatchitOperationMultiForward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 76
+x  ]%            <Plug>(MatchitVisualMultiForward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 74
+n  ]%            <Plug>(MatchitNormalMultiForward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 72
+x  a%            <Plug>(MatchitVisualTextObject)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 80
+n  dw          * vb"_d
+	Last set from ~/.config/nvim/maps.vim line 9
+n  gr          * <Cmd>Lspsaga rename<CR>
+	Last set from ~/.config/nvim/after/plugin/lspsaga.rc.vim line 24
+v  gx            <Plug>NetrwBrowseXVis
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/plugin/netrwPlugin.vim line 88
+n  gx            <Plug>NetrwBrowseX
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/plugin/netrwPlugin.vim line 82
+o  g%            <Plug>(MatchitOperationBackward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 61
+x  g%            <Plug>(MatchitVisualBackward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 59
+n  g%            <Plug>(MatchitNormalBackward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 57
+n  gh          * :Lspsaga lsp_finder<CR>
+	Last set from ~/.config/nvim/maps.vim line 143
+   sl            <C-W>l
+	Last set from ~/.config/nvim/maps.vim line 52
+   sj            <C-W>j
+	Last set from ~/.config/nvim/maps.vim line 51
+   sk            <C-W>k
+	Last set from ~/.config/nvim/maps.vim line 50
+   sh            <C-W>h
+	Last set from ~/.config/nvim/maps.vim line 49
+   s<Right>      <C-W>l
+	Last set from ~/.config/nvim/maps.vim line 48
+   s<Down>       <C-W>j
+	Last set from ~/.config/nvim/maps.vim line 47
+   s<Up>         <C-W>k
+	Last set from ~/.config/nvim/maps.vim line 46
+   s<Left>       <C-W>h
+	Last set from ~/.config/nvim/maps.vim line 45
+n  sv            :vsplit<CR><C-W>w
+	Last set from ~/.config/nvim/maps.vim line 42
+n  ss            :split<CR><C-W>w
+	Last set from ~/.config/nvim/maps.vim line 41
+n  te            :tabedit<Space>
+	Last set from ~/.config/nvim/maps.vim line 33
+n  y<C-G>      & :<C-U>call setreg(v:register, fugitive#Object(@%))<CR>
+	Last set from ~/.local/share/nvim/plugged/vim-fugitive/plugin/fugitive.vim line 559
+n  <Plug>NERDCommenterAltDelims * :call <SNR>84_SwitchToAlternativeDelimiters(1)<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3204
+x  <Plug>NERDCommenterUncomment * :call NERDComment("x", "Uncomment")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+n  <Plug>NERDCommenterUncomment * :call NERDComment("n", "Uncomment")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+x  <Plug>NERDCommenterAlignBoth * :call NERDComment("x", "AlignBoth")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+n  <Plug>NERDCommenterAlignBoth * :call NERDComment("n", "AlignBoth")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+x  <Plug>NERDCommenterAlignLeft * :call NERDComment("x", "AlignLeft")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+n  <Plug>NERDCommenterAlignLeft * :call NERDComment("n", "AlignLeft")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+n  <Plug>NERDCommenterAppend * :call NERDComment("n", "Append")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+x  <Plug>NERDCommenterYank * :call NERDComment("x", "Yank")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+n  <Plug>NERDCommenterYank * :call NERDComment("n", "Yank")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+x  <Plug>NERDCommenterSexy * :call NERDComment("x", "Sexy")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+n  <Plug>NERDCommenterSexy * :call NERDComment("n", "Sexy")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+x  <Plug>NERDCommenterInvert * :call NERDComment("x", "Invert")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+n  <Plug>NERDCommenterInvert * :call NERDComment("n", "Invert")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+n  <Plug>NERDCommenterToEOL * :call NERDComment("n", "ToEOL")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+x  <Plug>NERDCommenterNested * :call NERDComment("x", "Nested")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+n  <Plug>NERDCommenterNested * :call NERDComment("n", "Nested")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+x  <Plug>NERDCommenterMinimal * :call NERDComment("x", "Minimal")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+n  <Plug>NERDCommenterMinimal * :call NERDComment("n", "Minimal")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+x  <Plug>NERDCommenterToggle * :call NERDComment("x", "Toggle")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+n  <Plug>NERDCommenterToggle * :call NERDComment("n", "Toggle")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+x  <Plug>NERDCommenterComment * :call NERDComment("x", "Comment")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+n  <Plug>NERDCommenterComment * :call NERDComment("n", "Comment")<CR>
+	Last set from ~/.local/share/nvim/plugged/nerdcommenter/plugin/NERD_commenter.vim line 3171
+v  <F3>        * :MaximizerToggle<CR>gv
+	Last set from ~/.local/share/nvim/plugged/vim-maximizer/plugin/maximizer.vim line 52
+n  <F3>        * :MaximizerToggle<CR>
+	Last set from ~/.local/share/nvim/plugged/vim-maximizer/plugin/maximizer.vim line 51
+n  <Plug>VimspectorDownFrame * :<C-U>call vimspector#DownFrame()<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 81
+n  <Plug>VimspectorUpFrame * :<C-U>call vimspector#UpFrame()<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 79
+x  <Plug>VimspectorBalloonEval * :<C-U>call vimspector#ShowEvalBalloon( 1 )<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 76
+n  <Plug>VimspectorBalloonEval * :<C-U>call vimspector#ShowEvalBalloon( 0 )<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 73
+n  <Plug>VimspectorRunToCursor * :<C-U>call vimspector#RunToCursor()<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 69
+n  <Plug>VimspectorStepOut * :<C-U>call vimspector#StepOut()<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 66
+n  <Plug>VimspectorStepInto * :<C-U>call vimspector#StepInto()<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 64
+n  <Plug>VimspectorStepOver * :<C-U>call vimspector#StepOver()<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 62
+n  <Plug>VimspectorAddFunctionBreakpoint * :<C-U>call vimspector#AddFunctionBreakpoint( expand( '<cexpr>' ) )<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 60
+n  <Plug>VimspectorToggleConditionalBreakpoint * :<C-U>call vimspector#ToggleBreakpoint( { 'condition': input( 'Enter condition expression: ' ),   'hitCondition': input( 'Enter hit count expression: ' ) } )<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 55
+n  <Plug>VimspectorToggleBreakpoint * :<C-U>call vimspector#ToggleBreakpoint()<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 53
+n  <Plug>VimspectorPause * :<C-U>call vimspector#Pause()<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 51
+n  <Plug>VimspectorRestart * :<C-U>call vimspector#Restart()<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 49
+n  <Plug>VimspectorStop * :<C-U>call vimspector#Stop()<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 47
+n  <Plug>VimspectorLaunch * :<C-U>call vimspector#Launch( v:true )<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 45
+n  <Plug>VimspectorContinue * :<C-U>call vimspector#Continue()<CR>
+	Last set from ~/.local/share/nvim/plugged/vimspector/plugin/vimspector.vim line 43
+v  <Plug>NetrwBrowseXVis * :<C-U>call netrw#BrowseXVis()<CR>
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/plugin/netrwPlugin.vim line 90
+n  <Plug>NetrwBrowseX * :call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))<CR>
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/plugin/netrwPlugin.vim line 84
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 79
+o  <Plug>(MatchitOperationMultiForward) * :<C-U>call matchit#MultiMatch("W",  "o")<CR>
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 69
+o  <Plug>(MatchitOperationMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "o")<CR>
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 68
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 67
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 66
+n  <Plug>(MatchitNormalMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 65
+n  <Plug>(MatchitNormalMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 64
+o  <Plug>(MatchitOperationBackward) * :<C-U>call matchit#Match_wrapper('',0,'o')<CR>
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 54
+o  <Plug>(MatchitOperationForward) * :<C-U>call matchit#Match_wrapper('',1,'o')<CR>
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 53
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 52
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>m'gv``
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 51
+n  <Plug>(MatchitNormalBackward) * :<C-U>call matchit#Match_wrapper('',0,'n')<CR>
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 50
+n  <Plug>(MatchitNormalForward) * :<C-U>call matchit#Match_wrapper('',1,'n')<CR>
+	Last set from /home/linuxbrew/.linuxbrew/Cellar/neovim/HEAD-18bfcfe/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim line 49
+n  <Plug>PlenaryTestFile * :lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))<CR>
+	Last set from ~/.local/share/nvim/plugged/plenary.nvim/plugin/plenary.vim line 9
+n  <Right>     * :tabnext<CR>
+	Last set from ~/.config/nvim/maps.vim line 83
+n  <Left>      * :tabprevious<CR>
+	Last set from ~/.config/nvim/maps.vim line 82
+n  <S-Tab>       :tabprev<CR>
+	Last set from ~/.config/nvim/maps.vim line 34
+n  <F1>          ggVG
+	Last set from ~/.config/nvim/maps.vim line 12
+n  <C-S-P>     * "0p
+	Last set from ~/.config/nvim/maps.vim line 1

@@ -27,6 +27,9 @@ set expandtab
 set shell=zsh
 set backupskip=/tmp/*
 
+set hidden 
+set path+=**
+
 " incremental substitution (neovim)
 if has('nvim')
   set inccommand=split
@@ -137,9 +140,10 @@ if exists("&termguicolors") && exists("&winblend")
   set pumblend=5
   set background=dark
   " Use NeoSolarized
-  let g:neosolarized_termtrans=1
-  runtime ./colors/NeoSolarized.vim
-  colorscheme NeoSolarized
+  " let g:neosolarized_termtrans=1
+  " runtime ./colors/NeoSolarized.vim
+  " colorscheme NeoSolarized
+  colorscheme gruvbox
 endif
 
 "}}}

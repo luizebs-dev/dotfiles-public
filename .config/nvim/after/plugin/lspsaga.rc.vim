@@ -21,5 +21,5 @@ nnoremap <silent> gh <Cmd>Lspsaga lsp_finder<CR>
 nnoremap <silent><leader>ca :Lspsaga code_action<CR>
 vnoremap <silent><leader>ca :<C-U>Lspsaga range_code_action<CR>
 " -- rename
-nnoremap <silent>gr <Cmd>Lspsaga rename<CR>
+nnoremap <silent>;rn <Cmd>Lspsaga rename<CR>
 " -- close rename win use <C-c> in insert mode or `q` in noremal mode or `:q`
