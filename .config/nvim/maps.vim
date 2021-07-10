@@ -216,6 +216,7 @@ vnoremap <leader>d "_d
 " vim TODO
 nmap <Leader>tu <Plug>BujoChecknormal
 nmap <Leader>th <Plug>BujoAddnormal
+nmap <Leader>tt :Todo<CR>
 let g:bujo#todo_file_path = $HOME . "/.cache/bujo"
 
 nnoremap <Leader>ww ofunction wait(ms: number): Promise<void> {<CR>return new Promise(res => setTimeout(res, ms));<CR>}<esc>k=i{<CR>
@@ -231,3 +232,27 @@ nnoremap <leader>nf :NERDTreeFind<CR>
 " Start NERDTree and put the cursor back in the other window.
 " autocmd VimEnter * NERDTree | wincmd p
 
+" More substitutions:
+nnoremap <leader>r :'{,'}s/\<<C-r>=expand('<cword>')<CR>\>/
+nnoremap <leader>R :%s/\<<C-r>=expand('<cword>')<CR>\>/
+xnoremap <leader>r :<C-u>'{,'}s/<C-r>=GetVisualSelection()<CR>/
+xnoremap <leader>R :<C-u>%s/<C-r>=GetVisualSelection()<CR>/
+nnoremap <leader>x *``cgn
+nnoremap <leader>X #``cgN
+function! GetVisualSelection()
+    let old_reg = @v
+    normal! gv"vy
+    let raw_search = @v
+    let @v = old_reg
+    return substitute(escape(raw_search, '\/.*$^~[]'), "\n", '\\n', "g")
+endfunction
+
+" Tagbar:
+nmap <F3> :TagbarToggle<CR>
+"
+"
+" Jump alt files source header:
+map <F4> :e %:p:s,.hpp$,.X123X,:s,.cpp$,.hpp,:s,.X123X$,.cpp,<CR>
+map <F5> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+map <F10> :vs %:p:s,.hpp$,.X123X,:s,.cpp$,.hpp,:s,.X123X$,.cpp,<CR>
+map <F11> :vs %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>

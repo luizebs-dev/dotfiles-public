@@ -42,8 +42,8 @@ if has("nvim")
 
   " prettier
   " Plug 'sbdchd/neoformat'
-  " Plug 'vim-airline/vim-airline'
-  " Plug 'vim-airline/vim-airline-themes'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
 
   " airline
   " file expl
@@ -57,6 +57,8 @@ if has("nvim")
 
   Plug 'onsails/lspkind-nvim'
   Plug 'stevearc/aerial.nvim'
+  
+  Plug 'vuciv/vim-bujo'
 
 endif
 
