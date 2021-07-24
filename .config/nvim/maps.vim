@@ -57,6 +57,54 @@ nmap <C-w><C-k> <C-w>+
 nmap <C-w><C-j> <C-w>-
 
 
+" ALE completion and linting
+set completeopt=menuone,noinsert,noselect,preview
+
+" Use <Tab> and <S-Tab> to navigate through popup menu
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+let g:completion_confirm_key = ""
+imap <expr> <cr>  pumvisible() ? complete_info()["selected"] != "-1" ?
+                 \ "\<Plug>(completion_confirm_completion)"  : "\<c-e>\<CR>" :  "\<CR>"
+
+let g:ale_completion_enabled = 1
+let g:ale_disable_lsp = 0
+set omnifunc=ale#completion#OmniFunc
+let g:ale_completion_autoimport = 1
+
+nmap <silent> <C-p> <Plug>(ale_previous_wrap)
+nmap <silent> <C-n> <Plug>(ale_next_wrap)
+  let g:ale_completion_symbols = {
+  \ 'text': '',
+  \ 'method': '',
+  \ 'function': '',
+  \ 'constructor': '',
+  \ 'field': '',
+  \ 'variable': '',
+  \ 'class': '',
+  \ 'interface': '',
+  \ 'module': '',
+  \ 'property': '',
+  \ 'unit': 'unit',
+  \ 'value': 'val',
+  \ 'enum': '',
+  \ 'keyword': 'keyword',
+  \ 'snippet': '',
+  \ 'color': 'color',
+  \ 'file': '',
+  \ 'reference': 'ref',
+  \ 'folder': '',
+  \ 'enum member': '',
+  \ 'constant': '',
+  \ 'struct': '',
+  \ 'event': 'event',
+  \ 'operator': '',
+  \ 'type_parameter': 'type param',
+  \ '<default>': 'v'
+  \ }
+
+
 
 " Trigger configuration. Do not use <tab> if you use YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -65,6 +113,15 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 let g:vim_be_good_log_file = 1
 let g:vim_apm_log = 1
+
+" asyncomplete.vim
+imap <c-space> <Plug>(asyncomplete_force_refresh)
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>\<cr>" : "\<cr>"
+
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
 
 if executable('rg')
     let g:rg_derive_root='true'
@@ -134,7 +191,16 @@ function! ToggleQuickfix()
 endfunction
 
 " Git status
-nnoremap <leader>gs :Gstatus<cr>
+"nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>ga :Git fetch --all<CR>
+nnoremap <leader>grum :Git rebase upstream/master<CR>
+nnoremap <leader>grom :Git rebase origin/master<CR>
+nnoremap <leader>grud :Git rebase upstream/develop<CR>
+nnoremap <leader>grod :Git rebase origin/decelop<CR>
+
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gu :diffget //2<CR>
+nmap <leader>gs :G<CR>
 
 
 " -- lsp provider to find the cursor word definition and reference
@@ -256,3 +322,11 @@ map <F4> :e %:p:s,.hpp$,.X123X,:s,.cpp$,.hpp,:s,.X123X$,.cpp,<CR>
 map <F5> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 map <F10> :vs %:p:s,.hpp$,.X123X,:s,.cpp$,.hpp,:s,.X123X$,.cpp,<CR>
 map <F11> :vs %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+
+
+nmap ;l o//luiz 
+nmap ;ld :g/\/\/luiz/d<CR>
+
+
+" autocmd FileType cpp setlocal omnifunc=lsp#completew
+

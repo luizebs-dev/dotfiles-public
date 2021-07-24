@@ -55,9 +55,13 @@ if has("nvim")
   Plug 'PhilRunninger/nerdtree-buffer-ops'
   Plug 'PhilRunninger/nerdtree-visual-selection'
 
-  Plug 'onsails/lspkind-nvim'
+ " Plug 'onsails/lspkind-nvim'
   Plug 'stevearc/aerial.nvim'
-  
+
+  " ALE for autocompletion, etc... Like CoC
+ Plug 'dense-analysis/ale'
+ "Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
   Plug 'vuciv/vim-bujo'
 
 endif

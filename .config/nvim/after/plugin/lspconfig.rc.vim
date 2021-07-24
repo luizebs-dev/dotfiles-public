@@ -87,45 +87,45 @@ local on_attach = function(client, bufnr)
     '', -- TypeParameter
   }
 
-  require('lspkind').init({
-    -- enables text annotations
-    --
-    -- default: true
-    with_text = true,
-
-    -- default symbol map
-    -- can be either 'default' or
-    -- 'codicons' for codicon preset (requires vscode-codicons font installed)
-    --
-    -- default: 'default'
-    preset = 'codicons',
-
-    -- override preset symbols
-    --
-    -- default: {}
-    symbol_map = {
-      Text = '',
-      Method = 'ƒ',
-      Function = '',
-      Constructor = '',
-      Variable = '',
-      Class = '',
-      Interface = 'ﰮ',
-      Module = '',
-      Property = '',
-      Unit = '',
-      Value = '',
-      Enum = '了',
-      Keyword = '',
-      Snippet = '﬌',
-      Color = '',
-      File = '',
-      Folder = '',
-      EnumMember = '',
-      Constant = '',
-      Struct = ''
-    },
-  })
+--  require('lspkind').init({
+--    -- enables text annotations
+--    --
+--    -- default: true
+--    with_text = true,
+--
+--    -- default symbol map
+--    -- can be either 'default' or
+--    -- 'codicons' for codicon preset (requires vscode-codicons font installed)
+--    --
+--    -- default: 'default'
+--    preset = 'codicons',
+--
+--    -- override preset symbols
+--    --
+--    -- default: {}
+--    symbol_map = {
+--      Text = '',
+--      Method = 'ƒ',
+--      Function = '',
+--      Constructor = '',
+--      Variable = '',
+--      Class = '',
+--      Interface = 'ﰮ',
+--      Module = '',
+--      Property = '',
+--      Unit = '',
+--      Value = '',
+--      Enum = '了',
+--      Keyword = '',
+--      Snippet = '﬌',
+--      Color = '',
+--      File = '',
+--      Folder = '',
+--      EnumMember = '',
+--      Constant = '',
+--      Struct = ''
+--    },
+--  })
 
 
 
@@ -235,3 +235,23 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 )
 
 EOF
+
+"let g:lsp_async_completion = 1
+
+"autocmd FileType cpp setlocal omnifunc=lsp#complete
+
+"if executable('clangd')
+    "augroup vim_lsp_cpp
+        "autocmd!
+        "autocmd User lsp_setup call lsp#register_server({
+                    "\ 'name': 'clangd',
+                    "\ 'triggers': ['.', '::', '->'],
+                    "\ 'cmd': {server_info->['clangd']},
+                    "\ 'whitelist': ['c', 'cpp', 'objc', 'objcpp', 'cc'],
+                    "\ })
+        "autocmd FileType c,cpp,objc,objcpp,cc setlocal omnifunc=lsp#complete
+        "autocmd FileType c,cpp,objc,objcpp,cc setlocal keywordprg=:LspHover
+        "autocmd FileType c,cpp,objc,objcpp,cc nnoremap <buffer> <C-]> :LspDefinition<CR>
+        "autocmd FileType c,cpp,objc,objcpp,cc nnoremap <buffer> <F2> :LspRename<CR>
+    "augroup end
+"endif

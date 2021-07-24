@@ -5,5 +5,8 @@ if !exists('*fugitive#statusline')
   set statusline+=%{fugitive#statusline()}
 endif
 
-cnoreabbrev g Git
-cnoreabbrev gopen GBrowse
+" cunmap g
+"cnoreabbrev <expr> gb getcmdtype() == ":" && getcmdline() == 'gb' ? 'Gblame' : 'gb'
+
+"cnoreabbrev g Git
+"cnoreabbrev gopen GBrowse

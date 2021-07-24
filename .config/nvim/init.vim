@@ -30,6 +30,22 @@ set backupskip=/tmp/*
 set hidden 
 set path+=**
 
+" Ale disables lsp below
+let g:ale_disable_lsp = 1
+let g:lsp_async_completion = 1
+let g:lsp_diagnostics_enabled = 1
+let g:lsp_signs_enabled = 1
+let g:lsp_signs_error = {'text': '>', 'icon': expand('~/vimfiles/icon/error.ico')}
+let g:lsp_signs_warning = {'text': 'v', 'icon': expand('~/vimfiles/icon/warning.ico')}
+let g:lsp_signs_information = {'text': '!', 'icon': expand('~/vimfiles/icon/information.ico')}
+let g:lsp_signs_hint = {'text': '?', 'icon': expand('~/vimfiles/icon/hint.ico')}
+let g:lsp_diagnostics_echo_cursor = 1
+let g:lsp_use_event_queue = 1
+
+" turn hybrid line numbers off
+set number relativenumber
+set nu rnu
+
 " incremental substitution (neovim)
 if has('nvim')
   set inccommand=split
