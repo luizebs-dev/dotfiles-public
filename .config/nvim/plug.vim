@@ -19,11 +19,15 @@ if has("nvim")
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-telescope/telescope-fzy-native.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'hoob3rt/lualine.nvim'
   
+  " FZF: testing if does not eat cpu...
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'           " Set up fzf and fzf.vim 
   
-
+   
   " Debugger Plugins
   Plug 'puremourning/vimspector'
   Plug 'szw/vim-maximizer'
@@ -35,8 +39,8 @@ if has("nvim")
   Plug 'theprimeagen/vim-be-good'
   Plug 'gruvbox-community/gruvbox'
 
-  " Plug 'SirVer/ultisnips'
-  " Plug 'honza/vim-snippets'
+   Plug 'SirVer/ultisnips'
+   Plug 'honza/vim-snippets'
   " Plug 'ervandew/supertab'
   Plug 'jiangmiao/auto-pairs'
 
@@ -60,9 +64,11 @@ if has("nvim")
 
   " ALE for autocompletion, etc... Like CoC
  Plug 'dense-analysis/ale'
- "Plug 'neoclide/coc.nvim', {'branch': 'release'}
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   Plug 'vuciv/vim-bujo'
+
+  Plug 'JuliaEditorSupport/julia-vim'
 
 endif
 
